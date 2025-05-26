@@ -215,12 +215,14 @@
 
 - 在输出任何代码前，先学习技术栈如何正确使用，避免出现不符合框架规范的结果。
 
+- 实现用户需求时，应当检查前后端是否都需要编码，完整的实现用户功能。
+
 - 当你尝试新增或修改某个功能时，需要考虑以下业务实现的关联影响：
 
    - 前端：Page -> Component -> API 影响点位于哪个页面、哪个组件、哪个API
    - 后端：Handler -> Service -> Repository -> Model 影响点位于哪个Handler、哪个Service、哪个Repository、哪个Model
 
-- 开发前端页面时，你应当考虑优先使用 Ant Design Pro 和 ProComponents 提供的组件和API，避免重复造轮子。
+- 开发前端页面时，你应当考虑优先使用 ProComponents > Ant Design Pro > Ant Design > 自定义编写 的组件，避免重复造轮子。
 
 - 开发后端接口时，你应当考虑遵循RESTful风格，同时考虑性能开销，避免出现性能瓶颈或不必要的计算。
 
