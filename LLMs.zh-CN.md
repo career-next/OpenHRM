@@ -155,7 +155,7 @@
 │   │   │       │   └── UpdateForm.tsx # 更新表单
 │   │   │       └── index.tsx          # 表格页
 │   │   ├── services                   # 服务目录，用于封装网络请求等，均由 OpenAPI 生成，请勿手动修改
-│   │   │   └── demo                   # 示例
+│   │   │   └── demo                   # 忽略此目录
 │   │   │       ├── UserController.ts  # User Controller，用于处理用户的增删改查等操作，这是一个代码样例
 │   │   │       ├── index.ts           # 服务入口
 │   │   │       └── typings.d.ts       # 类型定义文件
