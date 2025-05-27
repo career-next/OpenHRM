@@ -60,6 +60,14 @@
           "name": "WebUI",
           "runtimeExecutable": "pnpm",
           "runtimeArgs": ["dev"]
+        },
+        {
+          "type": "node",
+          "request": "launch",
+          "cwd": "${workspaceFolder:frontend}",
+          "name": "OpenAPI",
+          "runtimeExecutable": "pnpm",
+          "runtimeArgs": ["openapi"]
         }
       ],
       "compounds": [
