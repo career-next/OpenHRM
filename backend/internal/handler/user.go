@@ -1,11 +1,12 @@
 package handler
 
 import (
-	"github.com/gin-gonic/gin"
-	"backend/api/v1"
+	v1 "backend/api/v1"
 	"backend/internal/service"
-	"go.uber.org/zap"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
+	"go.uber.org/zap"
 )
 
 type UserHandler struct {
@@ -24,7 +25,7 @@ func NewUserHandler(handler *Handler, userService service.UserService) *UserHand
 // @Summary 用户注册
 // @Schemes
 // @Description 目前只支持邮箱登录
-// @Tags 用户模块
+// @Tags user
 // @Accept json
 // @Produce json
 // @Param request body v1.RegisterRequest true "params"
@@ -50,7 +51,7 @@ func (h *UserHandler) Register(ctx *gin.Context) {
 // @Summary 账号登录
 // @Schemes
 // @Description
-// @Tags 用户模块
+// @Tags user
 // @Accept json
 // @Produce json
 // @Param request body v1.LoginRequest true "params"
@@ -77,7 +78,7 @@ func (h *UserHandler) Login(ctx *gin.Context) {
 // @Summary 获取用户信息
 // @Schemes
 // @Description
-// @Tags 用户模块
+// @Tags user
 // @Accept json
 // @Produce json
 // @Security Bearer
@@ -103,7 +104,7 @@ func (h *UserHandler) GetProfile(ctx *gin.Context) {
 // @Summary 修改用户信息
 // @Schemes
 // @Description
-// @Tags 用户模块
+// @Tags user
 // @Accept json
 // @Produce json
 // @Security Bearer
