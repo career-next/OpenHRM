@@ -14,10 +14,17 @@ export default defineConfig({
     {
       requestLibPath: "import { request } from '@umijs/max'",
       schemaPath: 'http://localhost:8000/swagger/doc.json',
+      apiPrefix: "'/v1'",
       mock: false,
     },
   ],
   routes: [
+    {
+      name: '登录',
+      path: '/login',
+      component: './Login',
+      layout: false,
+    },
     {
       path: '/',
       redirect: '/home',
@@ -26,6 +33,9 @@ export default defineConfig({
       name: '首页',
       path: '/home',
       component: './Home',
+      wrappers: [
+        '@/wrappers/auth',
+      ],
     },
     {
       name: '权限演示',
