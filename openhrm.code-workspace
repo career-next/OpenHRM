@@ -58,15 +58,15 @@
           "request": "launch",
           "cwd": "${workspaceFolder:frontend}",
           "name": "WebUI",
-          "runtimeExecutable": "pnpm",
-          "runtimeArgs": ["dev"]
+          "runtimeExecutable": "npm",
+          "runtimeArgs": ["start"]
         },
         {
           "type": "node",
           "request": "launch",
           "cwd": "${workspaceFolder:frontend}",
           "name": "OpenAPI",
-          "runtimeExecutable": "pnpm",
+          "runtimeExecutable": "npm",
           "runtimeArgs": ["openapi"]
         }
       ],
